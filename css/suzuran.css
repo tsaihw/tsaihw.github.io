@@ -14,10 +14,7 @@
        url(../fonts/jasmine.ttf) format("truetype"), /* Safari, Android, iOS */
        url(../fonts/jasmine.svg#SealmemoryHeader) format("svg"); /* Legacy iOS */
 }
-@font-face {
-  font-family: 'A1';
-  src: url('../fonts/A1.otf'); /* Safari, Android, iOS */
-}
+
 h1,
 h2,
 h3,
@@ -73,6 +70,93 @@ ul.B{
   margin:10px 0 0 5px;
   line-height: 1.6;
   list-style-type: disc;
+}
+/* 聯繫按鈕 */
+.btn-moka {
+  font:18px "Microsoft JhengHei",  sans-serif;
+  color: #ffe8df;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  margin:15 0 0 0px;
+  background-color: #393432;
+
+}
+
+.btn-moka:hover,
+.btn-moka:focus,
+.btn-moka:active,
+.btn-moka.active,
+.open .dropdown-toggle.btn-moka {
+  color: #fff8f6;
+  background-color: #211f1f;
+}
+.btn-moka:active,
+.btn-moka.active,
+.open .dropdown-toggle.btn-moka {
+    color: #fff8f6;
+    background-color: #211f1f;
+
+}
+
+.btn-moka.disabled,
+.btn-moka[disabled],
+fieldset[disabled] .btn-moka,
+.btn-moka.disabled:hover,
+.btn-moka[disabled]:hover,
+fieldset[disabled] .btn-moka:hover,
+.btn-moka.disabled:focus,
+.btn-moka[disabled]:focus,
+fieldset[disabled] .btn-moka:focus,
+.btn-moka.disabled:active,
+.btn-moka[disabled]:active,
+fieldset[disabled] .btn-moka:active,
+.btn-moka.disabled.active,
+.btn-moka[disabled].active,
+fieldset[disabled] .btn-moka.active {
+  background-color: #47403E;
+  border-color: #FFF6F3;
+}
+
+.btn-moka .badge {
+  color: #47403E;
+  background-color: #FFF6F3;
+}
+/* 讓modal變好看 */
+
+.modal-header{
+  background-color: rgba(40,39,38,0.7);
+  border-radius: 6px 6px 0 0;
+  border-bottom: 0px solid #e5e5e5;
+}
+.modal-content{
+  background-color: rgba(40,39,38,0.7);
+  border: 0px solid #999;
+  border: 0px solid rgba(0, 0, 0, .2);
+  border-radius: 6px;
+}
+.modal-body {
+  height: 550px;
+  overflow: auto;
+  background-color: rgba(40,39,38,0.7);
+  border-radius: 6px;
+}
+.modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 0px solid #e5e5e5;
+}
+.modal-backdrop {
+background-color: rgba(40,39,38);
+}
+/* 讓modal開啟時頁面不會滑動 */
+.modal {
+ overflow-y: auto;
+ }
+.modal-open {
+overflow: auto;
+}
+.modal-open[style] {
+padding-right: 0px !important;
 }
 .img-responsive{
   max-width: 100%;
