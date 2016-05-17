@@ -259,7 +259,11 @@ padding-right: 0px !important;
       background-color: #151515;
 }
 .copyright {
+<<<<<<< HEAD
     font-family: "Microsoft JhengHei",sans-serif;
+=======
+    font-family: "Microsoft JhengHei",serif;
+>>>>>>> origin/master
     font-size: 12px;
     color: #888888;
     padding-top: 8px;
