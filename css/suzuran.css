@@ -24,6 +24,7 @@ h6 {
   font-family: "cwtexming",serif;
   font-weight: 400;
 }
+h1{font-size: 24px}
 /*限制寬度*/
 .container{
   max-width:900px
