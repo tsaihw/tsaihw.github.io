@@ -1,4 +1,3 @@
-
 #160403
 在safari看會是滿版，在ipad看會歪掉
 #160404
@@ -192,3 +191,7 @@ favicon=蝸牛
 #160607
 各種favicon
 https://realfavicongenerator.net/
+#190803
+網頁改版
+#191231
+網頁文字增刪+移除留言板
