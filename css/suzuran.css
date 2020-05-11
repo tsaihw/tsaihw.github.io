@@ -2,9 +2,7 @@
  暖暖心理治療所版權所有
  */
 
-/*https://www.google.com/fonts/earlyaccess*/
-@import url(http://fonts.googleapis.com/earlyaccess/cwtexming.css);
-@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+
 
 @font-face {
   font-family: 'jasmine';
@@ -21,7 +19,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "cwtexming",serif;
   font-weight: 400;
 }
 h1{font-size: 24px}
