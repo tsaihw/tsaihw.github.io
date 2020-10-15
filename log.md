@@ -185,13 +185,24 @@ GH無法用php只好用google form
 	height:100px;
 }
 #160530
-新增favicon(沙發)
+    新增favicon(沙發)
 #160604
-favicon=蝸牛
+    favicon=蝸牛
 #160607
 各種favicon
-https://realfavicongenerator.net/
+    https://realfavicongenerator.net/
 #190803
-網頁改版
+    網頁改版->網頁最佳化
 #191231
-網頁文字增刪+移除留言板
+    網頁文字增刪+移除留言板
+#200117
+    新增telegram連結
+#200204
+    防疫公告
+#200512
+    改善CSS，刪除外部字型的引用(因Lighthouse SEO的performance竟然零分)
+#201016
+1. Add `rel="noopener"` or `rel="noreferrer"` to any external links to improve performance and prevent security vulnerabilities.
+2. third-party scripts
+3. Specifying a doctype prevents the browser from switching to quirks-mode.
+4. <meta name="description">
