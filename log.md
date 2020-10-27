@@ -203,6 +203,9 @@ GH無法用php只好用google form
     改善CSS，刪除外部字型的引用(因Lighthouse SEO的performance竟然零分)
 #201016
 1. Add `rel="noopener"` or `rel="noreferrer"` to any external links to improve performance and prevent security vulnerabilities.
-2. third-party scripts
-3. Specifying a doctype prevents the browser from switching to quirks-mode.
-4. <meta name="description">
+2. third-party scripts-->未修改
+3. Specifying a doctype prevents the browser from switching to quirks-mode.-->加入<!DOCTYPE html>
+4. <meta name="description">沒寫
+#201028
+1. rel="noopener"的修改
+2. <html lang="zh-Hant-TW">
