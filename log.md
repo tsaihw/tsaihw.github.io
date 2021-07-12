@@ -161,13 +161,12 @@ padding改成margin
 
 #160509-1
 網域註冊好了
-
-	1. 不要用url轉（原始網址會跑出來）及遮罩轉（會嵌在iframe，bootstrap格式會跑掉）
-	2. 放棄http://tsaihw.github.io/web03，因為DNS只能用host name-->改成tsaihw.github.io
-	3. 主要的設定竟然是在Github。弄一個CNAME在master branch下 --> Confirm that you have created and committed yourCNAMEfile on GitHub.
+1. 不要用url轉（原始網址會跑出來）及遮罩轉（會嵌在iframe，bootstrap格式會跑掉）
+2. 放棄http://tsaihw.github.io/web03，因為DNS只能用host name-->改成tsaihw.github.io
+3. 主要的設定竟然是在Github。弄一個CNAME在master branch下 --> Confirm that you have created and committed yourCNAMEfile on GitHub.
 https://help.github.com/articles/setting-up-your-pages-site-repository/
-	4. 改godaddy DNS的A部分https://help.github.com/articles/setting-up-an-apex-domain/#configuring-a-records-with-your-dns-provider
-	5. Follow your DNS provider's instructions to create two A records that point your custom domain to the following IP addresses:
+4. 改godaddy DNS的A部分https://help.github.com/articles/setting-up-an-apex-domain/#configuring-a-records-with-your-dns-provider
+5. Follow your DNS provider's instructions to create two A records that point your custom domain to the following IP addresses:
 		* 192.30.252.153
 		* 192.30.252.154
 
@@ -201,6 +200,8 @@ GH無法用php只好用google form
     防疫公告
 #200512
     改善CSS，刪除外部字型的引用(因Lighthouse SEO的performance竟然零分)
+#200916
+新增sitemap
 #201016
 1. Add `rel="noopener"` or `rel="noreferrer"` to any external links to improve performance and prevent security vulnerabilities.
 2. third-party scripts-->未修改
@@ -209,3 +210,21 @@ GH無法用php只好用google form
 #201028
 1. rel="noopener"的修改
 2. <html lang="zh-Hant-TW">
+#210214
+1. 遷移到gandi
+將godaddy的DNS改為gandi的，但網站就連不上..
+2. SSL憑證花一晚申請成功，沒想到轉址就送一個免費的，不過似乎用轉址(forwarding)不ok，github網址會顯示在瀏覽器。
+3. 嘗試改DNS record(在gandi設定)似乎便成功轉址。另外github也重新填入Custom domain為nuan-nuan.co，另外開啟了github提供的https(Enforce HTTPS選項)，網站就變成https!（SSL憑證白申請了）參考：https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site
+DNS record主要是將nuan-nuan.co指向github主機的ip(需要設定在A類別)，CNAME則是讓www.nuan-nuan.co也轉到github。
+@ 10800 IN A 185.199.108.153
+@ 10800 IN A 185.199.109.153
+@ 10800 IN A 185.199.110.153
+@ 10800 IN A 185.199.111.153
+www 10800 IN CNAME tsaihw.github.io.
+
+#210711
+配色改成白
+刪除造成圖片排板問題的<!DOCTYPE html>
+
+#210712 
+bootstrap從3.3.6升級到3.4.1(升級到5.0太複雜，暫時擱置)
