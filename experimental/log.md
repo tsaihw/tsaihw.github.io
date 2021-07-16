@@ -262,4 +262,22 @@ Also note, all uses of left and right have been replaced with start and end in B
     carousel-item-left => carousel-item-start
     carousel-item-right=> carousel-item-end
 
+#210717
+Gallery弄半天終於找到解答
+https://stackoverflow.com/questions/41794746/col-xs-not-working-in-bootstrap-4
+col-xs-* have been dropped in Bootstrap 4 in favor of col-*.
+Replace col-xs-12 with col-12 and it will work as expected.
+Also note col-xs-offset-{n} were replaced by offset-{n} in v4.
+
+
+Breakpoint          Class infix     Dimensions
+X-Small             None            <576px
+Small               sm              ≥576px
+Medium              md              ≥768px
+Large               lg              ≥992px
+Extra large         xl              ≥1200px
+Extra extra large   xxl             ≥1400px
+
+#210717
+konami
 
