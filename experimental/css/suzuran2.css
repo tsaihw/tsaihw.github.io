@@ -2,8 +2,6 @@
  暖暖心理治療所版權所有
  */
 
-
-
 @font-face {
   font-family: 'jasmine';
   src: url(../fonts/jasmine.eot); /* IE9 Compat Modes */
@@ -29,6 +27,7 @@ html {
   width: 100%;
   height: 100%;
   background-color:#f7f7f7;
+  background-image: url("/img/goodjob.jpg");
 }
 
 }
@@ -100,6 +99,7 @@ ul.B{
 }
 
 /* 相片區css */
+
 .img-gallery{
   filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
@@ -124,7 +124,7 @@ ul.B{
   margin: 70 5 20 5;
 
 }
-@media (max-width: 767px) {
+@media (max-width: 576px) {
     .img-responsive{
       padding:0;
       margin:50 0 0 0;
@@ -138,6 +138,12 @@ ul.B{
     .img-responsive-short {
       padding:0;
       margin:20 0 0 0;}
+    .img-gallery {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    }
     }
 
 
@@ -217,9 +223,7 @@ ul.B{
     padding-bottom: 0px;
 }
 /*限制寬度*/
-.nu-style-bling {
-  max-width: 900px;
-}
+
 /*上方加寬因為fixed navbar會蓋到內容*/
 .nu-style-paddy-t {
   padding-top: 33px
@@ -268,7 +272,7 @@ ul.B{
   padding-top: 0.51rem;
   padding-bottom: 0.21rem;
   margin-right:;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   color: #222222;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.2),
                0px -2px 1px rgba(255,255,255,0.2);
@@ -340,6 +344,12 @@ ul.B{
     max-height: var(--bs-scroll-height, 75vh);
     overflow-y: auto;
   }
+/******** 自己加的尺寸不知道會不會出問題@@ 注意col-xs-* have been dropped in Bootstrap 4 in favor of col-* ********/
+@media (max-width: 576px){
+  .nu-style-otani {
+  max-width: 95%;}
+}
+/******** 上面是自己加的不知道會不會出問題@@ ********/
 
 @media (min-width: 576px) {
   .navbar-expand-sm {
@@ -366,6 +376,8 @@ ul.B{
   .navbar-expand-sm .navbar-toggler {
     display: none;
   }
+  .nu-style-otani {
+  max-width: 90%;
 }
 @media (min-width: 768px) {
   .navbar-expand-md {
@@ -392,6 +404,8 @@ ul.B{
   .navbar-expand-md .navbar-toggler {
     display: none;
   }
+  .nu-style-otani {
+  max-width: 90%;
 }
 @media (min-width: 992px) {
   .navbar-expand-lg {
@@ -418,6 +432,9 @@ ul.B{
   .navbar-expand-lg .navbar-toggler {
     display: none;
   }
+  .nu-style-otani {
+  max-width: 90%;
+
 }
 @media (min-width: 1200px) {
   .navbar-expand-xl {
@@ -444,6 +461,9 @@ ul.B{
   .navbar-expand-xl .navbar-toggler {
     display: none;
   }
+  .nu-style-otani {
+  max-width: 900px;
+}
 }
 @media (min-width: 1400px) {
   .navbar-expand-xxl {
@@ -470,6 +490,9 @@ ul.B{
   .navbar-expand-xxl .navbar-toggler {
     display: none;
   }
+  .nu-style-otani {
+  max-width: 1200px;
+}
 }
 
 .navbar-expand {
@@ -681,6 +704,7 @@ ul.B{
 
 body {
 }
+/*小裝置設定*/
 @media (max-width: 900px) {
     .navbar-header {
     float: none;
@@ -708,14 +732,17 @@ body {
   .collapse.in{
   		display:block !important;
 	}
+  /*小裝置品牌名稱變小*/
   .navbar .navbar-brand {
     font-size: 1.7em;
-  }/*小裝置品牌名稱變小*
+  }
+  /*小裝置減低高度1*/
   .navbar-nav > li > a, .navbar-brand {
     padding-top:7px !important;
     padding-bottom:0 !important;
     height: 35px;
-  }/*小裝置減低高度1*
-  .navbar {min-height:35px !important;}/*小裝置減低高度2/
-}
-*/
+    margin: 0px 0px 7.5px 0px;
+  }
+  /*小裝置減低高度2*/
+  .navbar {min-height:35px !important;
+  }
