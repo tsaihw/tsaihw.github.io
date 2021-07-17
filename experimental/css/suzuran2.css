@@ -27,7 +27,6 @@ html {
   width: 100%;
   height: 100%;
   background-color:#f7f7f7;
-  background-image: url("/img/goodjob.jpg");
 }
 
 }
@@ -272,7 +271,7 @@ ul.B{
   padding-top: 0.51rem;
   padding-bottom: 0.21rem;
   margin-right:;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   color: #222222;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.2),
                0px -2px 1px rgba(255,255,255,0.2);
@@ -347,8 +346,9 @@ ul.B{
 /******** 自己加的尺寸不知道會不會出問題@@ 注意col-xs-* have been dropped in Bootstrap 4 in favor of col-* ********/
 @media (max-width: 576px){
   .nu-style-otani {
-  max-width: 95%;}
+  max-width: 97%;}
 }
+
 /******** 上面是自己加的不知道會不會出問題@@ ********/
 
 @media (min-width: 576px) {
@@ -377,7 +377,7 @@ ul.B{
     display: none;
   }
   .nu-style-otani {
-  max-width: 90%;
+  max-width: 95%;
 }
 @media (min-width: 768px) {
   .navbar-expand-md {
@@ -405,7 +405,7 @@ ul.B{
     display: none;
   }
   .nu-style-otani {
-  max-width: 90%;
+  max-width: 95%;
 }
 @media (min-width: 992px) {
   .navbar-expand-lg {
@@ -433,7 +433,7 @@ ul.B{
     display: none;
   }
   .nu-style-otani {
-  max-width: 90%;
+  max-width: 95%;
 
 }
 @media (min-width: 1200px) {
@@ -732,7 +732,7 @@ body {
   .collapse.in{
   		display:block !important;
 	}
-  /*小裝置品牌名稱變小*/
+  /*小裝置品牌名稱變小 以下疑似失效了*/
   .navbar .navbar-brand {
     font-size: 1.7em;
   }
