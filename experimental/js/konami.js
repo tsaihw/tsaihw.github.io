@@ -39,9 +39,12 @@ document.addEventListener('keydown', function(e) {
 
 function activateCheats() {
   document.body.style.backgroundImage = "url('img/*.jpg')";
-
-  var audio = new Audio('audio/sonic_theme.mp3');
+  
+  var audio = new Audio("https://vgmsite.com/soundtracks/bubble-bobble-nes/wiegiebo/03_Room%20Theme.mp3");
   audio.play();
 
-  alert("你最棒!");
+  alert("↑↑↓↓←→←→BA\nHave a Nice Day!!😀");
 }
+
+  // Mario https://vgmsite.com/soundtracks/super-mario-bros/gwsxwxwl/02%20-%20Invincibility%20Star.mp3
+  // Bobble Bubble https://vgmsite.com/soundtracks/bubble-bobble-nes/wiegiebo/03_Room%20Theme.mp3
